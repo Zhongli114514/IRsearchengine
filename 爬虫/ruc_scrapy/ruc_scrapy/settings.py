@@ -91,3 +91,13 @@ ROBOTSTXT_OBEY = True
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+
+# settings.py
+
+FEEDS = {
+    'output/results.jl': {
+        'format': 'jsonlines',
+        'encoding': 'utf8',
+        'overwrite': False,
+    },
+}
